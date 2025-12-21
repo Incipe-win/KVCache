@@ -1,5 +1,7 @@
 # High-Performance C++ Key-Value Cache
 
+[English](README.md) | [中文](README_zh.md)
+
 A high-performance, thread-safe Key-Value cache system implemented in modern C++.
 Designed for C++ Backend Developer interviews, demonstrating Concurrency, Networking, and System Design.
 
