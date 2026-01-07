@@ -15,7 +15,10 @@ RUN apt-get update && apt-get install -y \
 
 # Install xmake
 ENV XMAKE_ROOT=y
-RUN curl -fsSL https://xmake.io/shget.text | bash
+RUN curl -fsSL https://github.com/xmake-io/xmake/releases/download/v2.9.6/xmake-v2.9.6.gz.run -o xmake.run \
+    && chmod +x xmake.run \
+    && ./xmake.run -y \
+    && rm xmake.run
 
 # Set working directory
 WORKDIR /app
