@@ -1,5 +1,9 @@
 # 高性能 C++ 键值缓存系统
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Language](https://img.shields.io/badge/language-C%2B%2B20-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg)
+
 [English](README.md) | [中文](README_zh.md)
 
 一个使用现代 C++ 实现的高性能、线程安全的键值缓存系统。

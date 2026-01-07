@@ -1,5 +1,9 @@
 # High-Performance C++ Key-Value Cache
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Language](https://img.shields.io/badge/language-C%2B%2B20-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg)
+
 [English](README.md) | [中文](README_zh.md)
 
 A high-performance, thread-safe Key-Value cache system implemented in modern C++.
