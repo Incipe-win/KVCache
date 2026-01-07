@@ -3,6 +3,7 @@ FROM ubuntu:22.04 AS builder
 
 # Avoid interactive prompts
 ENV DEBIAN_FRONTEND=noninteractive
+ENV XMAKE_ROOT=y
 
 # Install build dependencies
 RUN apt-get update && apt-get install -y \
