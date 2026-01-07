@@ -14,11 +14,9 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install xmake
-ENV XMAKE_ROOT=y
-RUN curl -fsSL https://github.com/xmake-io/xmake/releases/download/v2.9.6/xmake-v2.9.6.gz.run -o xmake.run \
-    && chmod +x xmake.run \
-    && ./xmake.run -y \
-    && rm xmake.run
+RUN curl -fsSL https://github.com/xmake-io/xmake/releases/download/v2.9.6/xmake-v2.9.6.x86_64.deb -o xmake.deb \
+    && dpkg -i xmake.deb \
+    && rm xmake.deb
 
 # Set working directory
 WORKDIR /app
