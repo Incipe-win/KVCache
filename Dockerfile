@@ -32,9 +32,9 @@ COPY src/ src/
 COPY tests/ tests/
 
 # Build the project
-RUN ~/.local/bin/xmake f -m release -y
-RUN ~/.local/bin/xmake -y
-RUN ~/.local/bin/xmake install -o /app/install kv_server
+RUN xmake f -m release -y
+RUN xmake -y
+RUN xmake install -o /app/install kv_server
 
 # Runtime stage
 FROM ubuntu:22.04
