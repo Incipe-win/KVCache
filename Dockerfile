@@ -13,10 +13,12 @@ RUN apt-get update && apt-get install -y \
     zip \
     && rm -rf /var/lib/apt/lists/*
 
-# Install xmake
-RUN curl -fsSL https://github.com/xmake-io/xmake/releases/download/v2.9.6/xmake-v2.9.6.x86_64.deb -o xmake.deb \
-    && dpkg -i xmake.deb \
-    && rm xmake.deb
+# Install xmake via PPA
+RUN apt-get update && apt-get install -y software-properties-common \
+    && add-apt-repository -y ppa:xmake-io/xmake \
+    && apt-get update \
+    && apt-get install -y xmake \
+    && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
 WORKDIR /app
